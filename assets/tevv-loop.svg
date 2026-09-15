@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450" role="img" aria-labelledby="t d">
+  <title id="t">The TEVV feedback loop</title>
+  <desc id="d">A requirement becomes a test protocol, a trial, measurements, verification and validation, and a decision. A revalidation trigger feeds changes back into the requirement.</desc>
+  <style>
+    .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif; }
+    .sans { font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .label { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; letter-spacing: 0.08em; fill: #7A8088; }
+    @keyframes travel {
+      0.00% { transform: translate(170.0px, 120.0px); }
+      15.52% { transform: translate(500.0px, 120.0px); }
+      31.04% { transform: translate(830.0px, 120.0px); }
+      34.33% { transform: translate(900.0px, 120.0px); }
+      36.99% { transform: translate(940.0px, 160.0px); }
+      44.05% { transform: translate(940.0px, 310.0px); }
+      46.71% { transform: translate(900.0px, 350.0px); }
+      50.00% { transform: translate(830.0px, 350.0px); }
+      65.52% { transform: translate(500.0px, 350.0px); }
+      81.04% { transform: translate(170.0px, 350.0px); }
+      84.33% { transform: translate(100.0px, 350.0px); }
+      86.99% { transform: translate(60.0px, 310.0px); }
+      94.05% { transform: translate(60.0px, 160.0px); }
+      96.71% { transform: translate(100.0px, 120.0px); }
+      100.00% { transform: translate(170.0px, 120.0px); }
+    }
+
+    .dot { animation: travel 12.0s linear infinite; transform: translate(170px, 120px); }
+    .pulse { opacity: 0; animation: pulse 12.0s linear infinite; }
+    @keyframes pulse { 0% { opacity: 0.0; } 2% { opacity: 1; } 12% { opacity: 0; } 100% { opacity: 0; } }
+    .flow { stroke-dasharray: 6 8; animation: flow 3s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -28; } }
+    .p0 { animation-delay: -0.10s; }
+    .p1 { animation-delay: 1.76s; }
+    .p2 { animation-delay: 3.62s; }
+    .p3 { animation-delay: 5.90s; }
+    .p4 { animation-delay: 7.76s; }
+    .p5 { animation-delay: 9.62s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; }
+    }
+  </style>
+  <rect width="1000" height="450" fill="#F6F4EF"/>
+  <path d="M 170 120 L 500 120 L 830 120 L 900 120 L 940 160 L 940 310 L 900 350 L 830 350 L 500 350 L 170 350 L 100 350 L 60 310 L 60 160 L 100 120 Z" fill="none" stroke="#DAD6CC" stroke-width="2"/>
+  <path d="M 170 120 L 500 120 L 830 120 L 900 120 L 940 160 L 940 310 L 900 350 L 830 350 L 500 350 L 170 350 L 100 350 L 60 310 L 60 160 L 100 120 Z" fill="none" stroke="#5B7083" stroke-width="1.75" class="flow" opacity="0.7"/>
+  <g class="dot"><circle r="7" fill="#1F3A5F"/><circle r="12" fill="none" stroke="#1F3A5F" stroke-width="1" opacity="0.35"/></g>
+  <g class="">
+    <rect x="52.0" y="79.0" width="236" height="82" rx="4" fill="#FFFFFF" stroke="#DAD6CC" stroke-width="1.5"/>
+    <rect x="52.0" y="79.0" width="236" height="3" rx="1.5" fill="#1F3A5F"/>
+    <text x="170.0" y="105.0" class="sans" font-size="15" fill="#1B1F24" text-anchor="middle" font-weight="600" >Requirement</text>
+    <text x="170.0" y="125.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >task · target · condition</text>
+    <text x="170.0" y="142.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >threshold · confidence</text>
+  </g>
+  <rect class="pulse p0" x="48.0" y="75.0" width="244" height="90" rx="6" fill="none" stroke="#1F3A5F" stroke-width="2"/>
+  <g class="">
+    <rect x="382.0" y="79.0" width="236" height="82" rx="4" fill="#FFFFFF" stroke="#DAD6CC" stroke-width="1.5"/>
+    <rect x="382.0" y="79.0" width="236" height="3" rx="1.5" fill="#1F3A5F"/>
+    <text x="500.0" y="105.0" class="sans" font-size="15" fill="#1B1F24" text-anchor="middle" font-weight="600" >Test protocol</text>
+    <text x="500.0" y="125.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >factor matrix · sample size</text>
+    <text x="500.0" y="142.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >ground truth · stopping rule</text>
+  </g>
+  <rect class="pulse p1" x="378.0" y="75.0" width="244" height="90" rx="6" fill="none" stroke="#1F3A5F" stroke-width="2"/>
+  <g class="">
+    <rect x="712.0" y="79.0" width="236" height="82" rx="4" fill="#FFFFFF" stroke="#DAD6CC" stroke-width="1.5"/>
+    <rect x="712.0" y="79.0" width="236" height="3" rx="1.5" fill="#1F3A5F"/>
+    <text x="830.0" y="105.0" class="sans" font-size="15" fill="#1B1F24" text-anchor="middle" font-weight="600" >Trial</text>
+    <text x="830.0" y="125.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >frozen configuration</text>
+    <text x="830.0" y="142.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >runs chosen in advance</text>
+  </g>
+  <rect class="pulse p2" x="708.0" y="75.0" width="244" height="90" rx="6" fill="none" stroke="#1F3A5F" stroke-width="2"/>
+  <g class="">
+    <rect x="712.0" y="309.0" width="236" height="82" rx="4" fill="#FFFFFF" stroke="#DAD6CC" stroke-width="1.5"/>
+    <rect x="712.0" y="309.0" width="236" height="3" rx="1.5" fill="#1F3A5F"/>
+    <text x="830.0" y="335.0" class="sans" font-size="15" fill="#1B1F24" text-anchor="middle" font-weight="600" >Measure</text>
+    <text x="830.0" y="355.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >confusion matrix · Pd, Pfa</text>
+    <text x="830.0" y="372.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >intervals · CEP50 / R95</text>
+  </g>
+  <rect class="pulse p3" x="708.0" y="305.0" width="244" height="90" rx="6" fill="none" stroke="#1F3A5F" stroke-width="2"/>
+  <g class="">
+    <rect x="382.0" y="309.0" width="236" height="82" rx="4" fill="#FFFFFF" stroke="#DAD6CC" stroke-width="1.5"/>
+    <rect x="382.0" y="309.0" width="236" height="3" rx="1.5" fill="#1F3A5F"/>
+    <text x="500.0" y="335.0" class="sans" font-size="15" fill="#1B1F24" text-anchor="middle" font-weight="600" >Verify · Validate</text>
+    <text x="500.0" y="355.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >built to spec?</text>
+    <text x="500.0" y="372.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >right system for the mission?</text>
+  </g>
+  <rect class="pulse p4" x="378.0" y="305.0" width="244" height="90" rx="6" fill="none" stroke="#1F3A5F" stroke-width="2"/>
+  <g class="">
+    <rect x="52.0" y="309.0" width="236" height="82" rx="4" fill="#FFFFFF" stroke="#DAD6CC" stroke-width="1.5"/>
+    <rect x="52.0" y="309.0" width="236" height="3" rx="1.5" fill="#1F3A5F"/>
+    <text x="170.0" y="335.0" class="sans" font-size="15" fill="#1B1F24" text-anchor="middle" font-weight="600" >Decide</text>
+    <text x="170.0" y="355.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >accept · characterise more</text>
+    <text x="170.0" y="372.0" class="mono" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >revise the requirement</text>
+  </g>
+  <rect class="pulse p5" x="48.0" y="305.0" width="244" height="90" rx="6" fill="none" stroke="#1F3A5F" stroke-width="2"/>
+  <path d="M 346.0 114.0 L 355 120 L 346.0 126.0" fill="none" stroke="#5B7083" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 676.0 114.0 L 685 120 L 676.0 126.0" fill="none" stroke="#5B7083" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 946.0 231.0 L 940 240 L 934.0 231.0" fill="none" stroke="#5B7083" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 674.0 356.0 L 665 350 L 674.0 344.0" fill="none" stroke="#5B7083" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 344.0 356.0 L 335 350 L 344.0 344.0" fill="none" stroke="#5B7083" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 54.0 244.0 L 60 235 L 66.0 244.0" fill="none" stroke="#5B7083" stroke-width="2" stroke-linecap="round"/>
+  <rect x="332" y="205" width="336" height="60" rx="4" fill="#F6E9E6" stroke="#A33A2B" stroke-width="1.25"/>
+  <text x="500.0" y="228.0" class="mono" font-size="12" fill="#A33A2B" text-anchor="middle" font-weight="500" letter-spacing="0.08em">REVALIDATION TRIGGER</text>
+  <text x="500.0" y="250.0" class="sans" font-size="12" fill="#4A5058" text-anchor="middle" font-weight="400" >software, model, data or threat change expires evidence</text>
+  <path d="M 332 235 L 130 235 L 130 170" fill="none" stroke="#A33A2B" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M 124 178 L 130 170 L 136 178" fill="none" stroke="#A33A2B" stroke-width="1.5"/>
+  <text x="500.0" y="432.0" class="sans" font-size="13" fill="#7A8088" text-anchor="middle" font-weight="400" >Evidence moves the loop, not dates. Each pass either narrows an interval or changes the question.</text>
+</svg>
