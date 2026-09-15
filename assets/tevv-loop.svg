@@ -5,7 +5,7 @@
     .display { font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: -0.01em; }
     .sans { font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
     .mono { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .label { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; letter-spacing: 0.08em; fill: #6B7688; }
+    .label { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; letter-spacing: 0.08em; fill: #5F6B7C; }
     @keyframes travel {
       0.00% { transform: translate(170.0px, 120.0px); }
       15.52% { transform: translate(500.0px, 120.0px); }
@@ -103,5 +103,5 @@
   <text x="500.0" y="250.0" class="sans" font-size="12" fill="#3D4A5C" text-anchor="middle" font-weight="400" >software, model, data or threat change expires evidence</text>
   <path d="M 332 235 L 130 235 L 130 170" fill="none" stroke="#8A6A1F" stroke-width="1.5" stroke-dasharray="4 4"/>
   <path d="M 124 178 L 130 170 L 136 178" fill="none" stroke="#8A6A1F" stroke-width="1.5"/>
-  <text x="500.0" y="432.0" class="sans" font-size="13" fill="#6B7688" text-anchor="middle" font-weight="400" >Evidence moves the loop, not dates. Each pass either narrows an interval or changes the question.</text>
+  <text x="500.0" y="432.0" class="sans" font-size="13" fill="#5F6B7C" text-anchor="middle" font-weight="400" >Evidence moves the loop, not dates. Each pass either narrows an interval or changes the question.</text>
 </svg>
